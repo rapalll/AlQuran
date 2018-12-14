@@ -1,15 +1,11 @@
 package com.grack.rapalll.al_quran.api;
 
-import com.grack.rapalll.al_quran.model.DataItem;
-
-import java.util.Calendar;
-import java.util.List;
-
+import com.grack.rapalll.al_quran.model.Surah;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface ApiInterface {
 
-    @GET("/surah")
-    Call<List<DataItem>> getAllsurah();
+  @GET("surah")
+  Call<Surah> getAllsurah();
 }
