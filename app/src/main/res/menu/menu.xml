@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/alquran"
+        android:icon="@drawable/quran"
+        android:title="@string/al_quran"></item>
+
+    <item
+        android:id="@+id/jadwalSholat"
+        android:icon="@drawable/salat"
+        android:title="@string/jadwal_sholat">
+
+    </item>
+
+    <item
+        android:id="@+id/masque"
+        android:icon="@drawable/mosque"
+        android:title="@string/masque">
+
+    </item>
+
+
+</menu>
