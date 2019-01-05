@@ -1,112 +1,110 @@
 package com.grack.rapalll.al_quran.model.models;
 
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+public class DataItem{
 
+	@SerializedName("number")
+	private int number;
 
-public class DataItem {
+	@SerializedName("englishName")
+	private String englishName;
 
-    @SerializedName("number")
-    private int number;
+	@SerializedName("numberOfAyahs")
+	private int numberOfAyahs;
 
-    @SerializedName("englishName")
-    private String englishName;
+	@SerializedName("revelationType")
+	private String revelationType;
 
-    @SerializedName("numberOfAyahs")
-    private int numberOfAyahs;
+	@SerializedName("name")
+	private String name;
 
-    @SerializedName("revelationType")
-    private String revelationType;
+	@SerializedName("edition")
+	private Edition edition;
 
-    @SerializedName("name")
-    private String name;
+	@SerializedName("ayahs")
+	private List<AyahsItem> ayahs;
 
-    @SerializedName("edition")
-    private Edition edition;
+	@SerializedName("englishNameTranslation")
+	private String englishNameTranslation;
 
-    @SerializedName("ayahs")
-    private List<AyahsItem> ayahs;
+	public void setNumber(int number){
+		this.number = number;
+	}
 
-    @SerializedName("englishNameTranslation")
-    private String englishNameTranslation;
+	public int getNumber(){
+		return number;
+	}
 
-    public int getNumber() {
-        return number;
-    }
+	public void setEnglishName(String englishName){
+		this.englishName = englishName;
+	}
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
+	public String getEnglishName(){
+		return englishName;
+	}
 
-    public String getEnglishName() {
-        return englishName;
-    }
+	public void setNumberOfAyahs(int numberOfAyahs){
+		this.numberOfAyahs = numberOfAyahs;
+	}
 
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
-    }
+	public int getNumberOfAyahs(){
+		return numberOfAyahs;
+	}
 
-    public int getNumberOfAyahs() {
-        return numberOfAyahs;
-    }
+	public void setRevelationType(String revelationType){
+		this.revelationType = revelationType;
+	}
 
-    public void setNumberOfAyahs(int numberOfAyahs) {
-        this.numberOfAyahs = numberOfAyahs;
-    }
+	public String getRevelationType(){
+		return revelationType;
+	}
 
-    public String getRevelationType() {
-        return revelationType;
-    }
+	public void setName(String name){
+		this.name = name;
+	}
 
-    public void setRevelationType(String revelationType) {
-        this.revelationType = revelationType;
-    }
+	public String getName(){
+		return name;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public void setEdition(Edition edition){
+		this.edition = edition;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public Edition getEdition(){
+		return edition;
+	}
 
-    public Edition getEdition() {
-        return edition;
-    }
+	public void setAyahs(List<AyahsItem> ayahs){
+		this.ayahs = ayahs;
+	}
 
-    public void setEdition(Edition edition) {
-        this.edition = edition;
-    }
+	public List<AyahsItem> getAyahs(){
+		return ayahs;
+	}
 
-    public List<AyahsItem> getAyahs() {
-        return ayahs;
-    }
+	public void setEnglishNameTranslation(String englishNameTranslation){
+		this.englishNameTranslation = englishNameTranslation;
+	}
 
-    public void setAyahs(List<AyahsItem> ayahs) {
-        this.ayahs = ayahs;
-    }
+	public String getEnglishNameTranslation(){
+		return englishNameTranslation;
+	}
 
-    public String getEnglishNameTranslation() {
-        return englishNameTranslation;
-    }
-
-    public void setEnglishNameTranslation(String englishNameTranslation) {
-        this.englishNameTranslation = englishNameTranslation;
-    }
-
-    @Override
-    public String toString() {
-        return
-                "DataItem{" +
-                        "number = '" + number + '\'' +
-                        ",englishName = '" + englishName + '\'' +
-                        ",numberOfAyahs = '" + numberOfAyahs + '\'' +
-                        ",revelationType = '" + revelationType + '\'' +
-                        ",name = '" + name + '\'' +
-                        ",edition = '" + edition + '\'' +
-                        ",ayahs = '" + ayahs + '\'' +
-                        ",englishNameTranslation = '" + englishNameTranslation + '\'' +
-                        "}";
-    }
+	@Override
+ 	public String toString(){
+		return 
+			"DataItem{" + 
+			"number = '" + number + '\'' + 
+			",englishName = '" + englishName + '\'' + 
+			",numberOfAyahs = '" + numberOfAyahs + '\'' + 
+			",revelationType = '" + revelationType + '\'' + 
+			",name = '" + name + '\'' + 
+			",edition = '" + edition + '\'' + 
+			",ayahs = '" + ayahs + '\'' + 
+			",englishNameTranslation = '" + englishNameTranslation + '\'' + 
+			"}";
+		}
 }
