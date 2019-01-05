@@ -2,84 +2,111 @@ package com.grack.rapalll.al_quran.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
+
 public class DataItem {
 
-  @SerializedName("number")
-  private int number;
+	@SerializedName("number")
+	private int number;
 
-  @SerializedName("englishName")
-  private String englishName;
+	@SerializedName("englishName")
+	private String englishName;
 
-  @SerializedName("numberOfAyahs")
-  private int numberOfAyahs;
+	@SerializedName("numberOfAyahs")
+	private int numberOfAyahs;
 
-  @SerializedName("revelationType")
-  private String revelationType;
+	@SerializedName("revelationType")
+	private String revelationType;
 
-  @SerializedName("name")
-  private String name;
+	@SerializedName("name")
+	private String name;
 
-  @SerializedName("englishNameTranslation")
-  private String englishNameTranslation;
+	@SerializedName("edition")
+	private Edition edition;
 
-  public void setNumber(int number) {
-    this.number = number;
-  }
+	@SerializedName("ayahs")
+	private List<AyahsItem> ayahs;
 
-  public int getNumber() {
-    return number;
-  }
+	@SerializedName("englishNameTranslation")
+	private String englishNameTranslation;
 
-  public void setEnglishName(String englishName) {
-    this.englishName = englishName;
-  }
+	public int getNumber() {
+		return number;
+	}
 
-  public String getEnglishName() {
-    return englishName;
-  }
+	public void setNumber(int number) {
+		this.number = number;
+	}
 
-  public void setNumberOfAyahs(int numberOfAyahs) {
-    this.numberOfAyahs = numberOfAyahs;
-  }
+	public String getEnglishName() {
+		return englishName;
+	}
 
-  public int getNumberOfAyahs() {
-    return numberOfAyahs;
-  }
+	public void setEnglishName(String englishName) {
+		this.englishName = englishName;
+	}
 
-  public void setRevelationType(String revelationType) {
-    this.revelationType = revelationType;
-  }
+	public int getNumberOfAyahs() {
+		return numberOfAyahs;
+	}
 
-  public String getRevelationType() {
-    return revelationType;
-  }
+	public void setNumberOfAyahs(int numberOfAyahs) {
+		this.numberOfAyahs = numberOfAyahs;
+	}
 
-  public void setName(String name) {
-    this.name = name;
-  }
+	public String getRevelationType() {
+		return revelationType;
+	}
 
-  public String getName() {
-    return name;
-  }
+	public void setRevelationType(String revelationType) {
+		this.revelationType = revelationType;
+	}
 
-  public void setEnglishNameTranslation(String englishNameTranslation) {
-    this.englishNameTranslation = englishNameTranslation;
-  }
+	public String getName() {
+		return name;
+	}
 
-  public String getEnglishNameTranslation() {
-    return englishNameTranslation;
-  }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-  @Override
-  public String toString() {
-    return
-        "DataItem{" +
-            "number = '" + number + '\'' +
-            ",englishName = '" + englishName + '\'' +
-            ",numberOfAyahs = '" + numberOfAyahs + '\'' +
-            ",revelationType = '" + revelationType + '\'' +
-            ",name = '" + name + '\'' +
-            ",englishNameTranslation = '" + englishNameTranslation + '\'' +
-            "}";
-  }
+	public Edition getEdition() {
+		return edition;
+	}
+
+	public void setEdition(Edition edition) {
+		this.edition = edition;
+	}
+
+	public List<AyahsItem> getAyahs() {
+		return ayahs;
+	}
+
+	public void setAyahs(List<AyahsItem> ayahs) {
+		this.ayahs = ayahs;
+	}
+
+	public String getEnglishNameTranslation() {
+		return englishNameTranslation;
+	}
+
+	public void setEnglishNameTranslation(String englishNameTranslation) {
+		this.englishNameTranslation = englishNameTranslation;
+	}
+
+	@Override
+	public String toString() {
+		return
+				"DataItem{" +
+						"number = '" + number + '\'' +
+						",englishName = '" + englishName + '\'' +
+						",numberOfAyahs = '" + numberOfAyahs + '\'' +
+						",revelationType = '" + revelationType + '\'' +
+						",name = '" + name + '\'' +
+						",edition = '" + edition + '\'' +
+						",ayahs = '" + ayahs + '\'' +
+						",englishNameTranslation = '" + englishNameTranslation + '\'' +
+						"}";
+	}
 }

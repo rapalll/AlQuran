@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Al-Quran</string>
+    <string name="ayat">Ayat</string>
+    <string name="jadwal_sholat">Jadwal Sholat</string>
+    <string name="al_quran">Al-Quran</string>
+    <string name="masque">Masjid</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading">Memuat Data...</string>
 </resources>

@@ -1,105 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--<android.support.v7.widget.CardView--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="4dp"--><!--android:layout_marginEnd="8dp"--><!--app:cardCornerRadius="8dp"--><!--app:cardElevation="1dp"--><!--app:cardMaxElevation="2dp"--><!--app:cardUseCompatPadding="true"--><!--app:contentPadding="1dp"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.0"--><!--app:layout_constraintStart_toStartOf="parent"--><!--tools:layout_editor_absoluteY="8dp">-->
+
+
+<!--<android.support.constraint.ConstraintLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+<!--<TextView--><!--android:id="@+id/rowNumber"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerInParent="true"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.025"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--app:layout_constraintVertical_bias="0.23"--><!--tools:text="1" />-->
+
+
+<!--<android.support.constraint.ConstraintLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent">-->
+
+
+<!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="8dp"--><!--android:background="@drawable/ic_bg_row"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.0"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--app:layout_constraintVertical_bias="0.0" />-->
+
+<!--<TextView--><!--android:id="@+id/rowNamaSurah"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginTop="1dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="8dp"--><!--android:textColor="#313131"--><!--android:textSize="17sp"--><!--android:textStyle="bold"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.133"--><!--app:layout_constraintStart_toStartOf="parent"--><!--app:layout_constraintTop_toTopOf="parent"--><!--app:layout_constraintVertical_bias="0.0"--><!--tools:text="Nama Surah" />-->
+
+<!--<TextView--><!--android:id="@+id/rowTerjemahanSurah"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:textSize="12sp"--><!--android:textStyle="italic"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.117"--><!--app:layout_constraintStart_toStartOf="parent"--><!--tools:text="Terjemahan" />-->
+
+
+<!--<TextView--><!--android:id="@+id/rowJumlahAyat"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:layout_marginBottom="16dp"--><!--android:gravity="center"--><!--android:textColor="@color/colorPrimaryDark"--><!--android:textSize="13sp"--><!--android:textStyle="bold"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.975"--><!--app:layout_constraintStart_toStartOf="parent"--><!--tools:ignore="MissingConstraints"--><!--tools:text="123" />-->
+
+<!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginStart="8dp"--><!--android:layout_marginEnd="8dp"--><!--android:gravity="center"--><!--android:text="@string/ayat"--><!--android:textSize="12sp"--><!--app:layout_constraintBottom_toBottomOf="parent"--><!--app:layout_constraintEnd_toEndOf="parent"--><!--app:layout_constraintHorizontal_bias="0.975"--><!--app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+<!--</android.support.v7.widget.CardView>-->
+
+
+<!--</android.support.constraint.ConstraintLayout>-->
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="wrap_content">
 
-    <TextView
-      android:id="@+id/rowTerjemahanSurah"
-      android:layout_width="match_parent"
-      android:layout_height="100dp"
-      android:textSize="12sp"
-      android:textStyle="italic"
-      tools:text="Terjemahan"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
 
-    <!--<android.support.v7.widget.CardView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:cardCornerRadius="10dp"-->
-        <!--app:cardElevation="1dp"-->
-        <!--app:cardMaxElevation="2dp"-->
-        <!--app:cardUseCompatPadding="true"-->
-        <!--app:contentPadding="10dp">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal">-->
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_bg_row"
+                android:orientation="vertical">
 
-            <!--<RelativeLayout-->
-                <!--android:layout_width="50dp"-->
-                <!--android:layout_height="50dp"-->
-                <!--android:background="@drawable/ic_bg_row">-->
+                <TextView
+                    android:id="@+id/rowNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1" />
+            </android.support.constraint.ConstraintLayout>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/rowNumber"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--tools:text="1"/>-->
-            <!--</RelativeLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
 
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:orientation="horizontal">-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                <!--<LinearLayout-->
-                    <!--android:layout_width="0dp"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center_vertical"-->
-                    <!--android:layout_marginStart="10dp"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:orientation="vertical">-->
+                    <TextView
+                        android:id="@+id/rowNamaSurah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#313131"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        tools:text="Nama Surah" />
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/rowNamaSurah"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:textColor="#313131"-->
-                        <!--android:textSize="17sp"-->
-                        <!--android:textStyle="bold"-->
-                        <!--tools:text="Nama Surah"/>-->
+                    <TextView
+                        android:id="@+id/rowTerjemahanSurah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        tools:text="Terjemahan" />
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/rowTerjemahanSurah"-->
-                        <!--android:layout_width="wrap_content"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:textSize="12sp"-->
-                        <!--android:textStyle="italic"-->
-                        <!--tools:text="Terjemahan"/>-->
+                </LinearLayout>
 
-                <!--</LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
 
-                <!--<LinearLayout-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="center_vertical"-->
-                    <!--android:orientation="vertical">-->
+                    <TextView
+                        android:id="@+id/rowJumlahAyat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        tools:text="Jumlah Ayat" />
 
-                    <!--<TextView-->
-                        <!--android:id="@+id/rowJumlahAyat"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:gravity="center"-->
-                        <!--android:textColor="@color/colorPrimaryDark"-->
-                        <!--android:textSize="13sp"-->
-                        <!--android:textStyle="bold"-->
-                        <!--tools:text="Jumlah Ayat"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ayat"
+                        android:textSize="12sp" />
 
-                    <!--<TextView-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:gravity="center"-->
-                        <!--android:text="Ayat"-->
-                        <!--android:textSize="12sp" />-->
+                </LinearLayout>
 
-                <!--</LinearLayout>-->
+            </LinearLayout>
+        </LinearLayout>
 
-            <!--</LinearLayout>-->
-        <!--</LinearLayout>-->
-
-    <!--</android.support.v7.widget.CardView>-->
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
