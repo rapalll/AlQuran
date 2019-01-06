@@ -1,86 +1,86 @@
 package com.grack.rapalll.al_quran.model.models;
 
-import com.google.gson.annotations.SerializedName;
 
+import com.google.gson.annotations.SerializedName;
 
 public class Edition {
 
-    @SerializedName("identifier")
-    private String identifier;
+  @SerializedName("identifier")
+  private String identifier;
 
-    @SerializedName("englishName")
-    private String englishName;
+  @SerializedName("englishName")
+  private String englishName;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("format")
-    private String format;
+  @SerializedName("format")
+  private String format;
 
-    @SerializedName("language")
-    private String language;
+  @SerializedName("language")
+  private String language;
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    public String getIdentifier() {
-        return identifier;
-    }
+  public String getIdentifier() {
+    return identifier;
+  }
 
-    public void setIdentifier(String identifier) {
-        this.identifier = identifier;
-    }
+  public void setIdentifier(String identifier) {
+    this.identifier = identifier;
+  }
 
-    public String getEnglishName() {
-        return englishName;
-    }
+  public String getEnglishName() {
+    return englishName;
+  }
 
-    public void setEnglishName(String englishName) {
-        this.englishName = englishName;
-    }
+  public void setEnglishName(String englishName) {
+    this.englishName = englishName;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public String getFormat() {
-        return format;
-    }
+  public String getFormat() {
+    return format;
+  }
 
-    public void setFormat(String format) {
-        this.format = format;
-    }
+  public void setFormat(String format) {
+    this.format = format;
+  }
 
-    public String getLanguage() {
-        return language;
-    }
+  public String getLanguage() {
+    return language;
+  }
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
+  public void setLanguage(String language) {
+    this.language = language;
+  }
 
-    public String getType() {
-        return type;
-    }
+  public String getType() {
+    return type;
+  }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
-    @Override
-    public String toString() {
-        return
-                "Edition{" +
-                        "identifier = '" + identifier + '\'' +
-                        ",englishName = '" + englishName + '\'' +
-                        ",name = '" + name + '\'' +
-                        ",format = '" + format + '\'' +
-                        ",language = '" + language + '\'' +
-                        ",type = '" + type + '\'' +
-                        "}";
-    }
+  @Override
+  public String toString() {
+    return
+        "Edition{" +
+            "identifier = '" + identifier + '\'' +
+            ",englishName = '" + englishName + '\'' +
+            ",name = '" + name + '\'' +
+            ",format = '" + format + '\'' +
+            ",language = '" + language + '\'' +
+            ",type = '" + type + '\'' +
+            "}";
+  }
 }

@@ -1,52 +1,50 @@
 package com.grack.rapalll.al_quran.model.models;
 
+import java.util.List;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
+public class IndonesiaResponse{
 
+	@SerializedName("code")
+	private int code;
 
-public class IndonesiaResponse {
+	@SerializedName("data")
+	private List<DataItem> data;
 
-    @SerializedName("code")
-    private int code;
+	@SerializedName("status")
+	private String status;
 
-    @SerializedName("data")
-    private List<DataItem> data;
+	public void setCode(int code){
+		this.code = code;
+	}
 
-    @SerializedName("status")
-    private String status;
+	public int getCode(){
+		return code;
+	}
 
-    public int getCode() {
-        return code;
-    }
+	public void setData(List<DataItem> data){
+		this.data = data;
+	}
 
-    public void setCode(int code) {
-        this.code = code;
-    }
+	public List<DataItem> getData(){
+		return data;
+	}
 
-    public List<DataItem> getData() {
-        return data;
-    }
+	public void setStatus(String status){
+		this.status = status;
+	}
 
-    public void setData(List<DataItem> data) {
-        this.data = data;
-    }
+	public String getStatus(){
+		return status;
+	}
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return
-                "IndonesiaResponse{" +
-                        "code = '" + code + '\'' +
-                        ",data = '" + data + '\'' +
-                        ",status = '" + status + '\'' +
-                        "}";
-    }
+	@Override
+ 	public String toString(){
+		return 
+			"IndonesiaResponse{" + 
+			"code = '" + code + '\'' + 
+			",data = '" + data + '\'' + 
+			",status = '" + status + '\'' + 
+			"}";
+		}
 }

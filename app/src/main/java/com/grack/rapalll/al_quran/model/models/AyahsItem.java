@@ -2,108 +2,120 @@ package com.grack.rapalll.al_quran.model.models;
 
 import com.google.gson.annotations.SerializedName;
 
-public class AyahsItem {
+public class AyahsItem{
 
-    @SerializedName("number")
-    private int number;
+	@SerializedName("number")
+	private int number;
 
-    @SerializedName("hizbQuarter")
-    private int hizbQuarter;
+	@SerializedName("hizbQuarter")
+	private int hizbQuarter;
 
-    @SerializedName("ruku")
-    private int ruku;
+	@SerializedName("ruku")
+	private int ruku;
 
-    @SerializedName("manzil")
-    private int manzil;
+	@SerializedName("manzil")
+	private int manzil;
 
-    @SerializedName("text")
-    private String text;
+	@SerializedName("text")
+	private String text;
 
-    @SerializedName("page")
-    private int page;
+	@SerializedName("page")
+	private int page;
 
-    @SerializedName("numberInSurah")
-    private int numberInSurah;
+	@SerializedName("sajda")
+	private boolean sajda;
 
-    @SerializedName("juz")
-    private int juz;
+	@SerializedName("numberInSurah")
+	private int numberInSurah;
 
-    public int getNumber() {
-        return number;
-    }
+	@SerializedName("juz")
+	private int juz;
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
+	public void setNumber(int number){
+		this.number = number;
+	}
 
-    public int getHizbQuarter() {
-        return hizbQuarter;
-    }
+	public int getNumber(){
+		return number;
+	}
 
-    public void setHizbQuarter(int hizbQuarter) {
-        this.hizbQuarter = hizbQuarter;
-    }
+	public void setHizbQuarter(int hizbQuarter){
+		this.hizbQuarter = hizbQuarter;
+	}
 
-    public int getRuku() {
-        return ruku;
-    }
+	public int getHizbQuarter(){
+		return hizbQuarter;
+	}
 
-    public void setRuku(int ruku) {
-        this.ruku = ruku;
-    }
+	public void setRuku(int ruku){
+		this.ruku = ruku;
+	}
 
-    public int getManzil() {
-        return manzil;
-    }
+	public int getRuku(){
+		return ruku;
+	}
 
-    public void setManzil(int manzil) {
-        this.manzil = manzil;
-    }
+	public void setManzil(int manzil){
+		this.manzil = manzil;
+	}
 
-    public String getText() {
-        return text;
-    }
+	public int getManzil(){
+		return manzil;
+	}
 
-    public void setText(String text) {
-        this.text = text;
-    }
+	public void setText(String text){
+		this.text = text;
+	}
 
-    public int getPage() {
-        return page;
-    }
+	public String getText(){
+		return text;
+	}
 
-    public void setPage(int page) {
-        this.page = page;
-    }
+	public void setPage(int page){
+		this.page = page;
+	}
 
-    public int getNumberInSurah() {
-        return numberInSurah;
-    }
+	public int getPage(){
+		return page;
+	}
 
-    public void setNumberInSurah(int numberInSurah) {
-        this.numberInSurah = numberInSurah;
-    }
+	public void setSajda(boolean sajda){
+		this.sajda = sajda;
+	}
 
-    public int getJuz() {
-        return juz;
-    }
+	public boolean isSajda(){
+		return sajda;
+	}
 
-    public void setJuz(int juz) {
-        this.juz = juz;
-    }
+	public void setNumberInSurah(int numberInSurah){
+		this.numberInSurah = numberInSurah;
+	}
 
-    @Override
-    public String toString() {
-        return
-                "AyahsItem{" +
-                        "number = '" + number + '\'' +
-                        ",hizbQuarter = '" + hizbQuarter + '\'' +
-                        ",ruku = '" + ruku + '\'' +
-                        ",manzil = '" + manzil + '\'' +
-                        ",text = '" + text + '\'' +
-                        ",page = '" + page + '\'' +
-                        ",numberInSurah = '" + numberInSurah + '\'' +
-                        ",juz = '" + juz + '\'' +
-                        "}";
-    }
+	public int getNumberInSurah(){
+		return numberInSurah;
+	}
+
+	public void setJuz(int juz){
+		this.juz = juz;
+	}
+
+	public int getJuz(){
+		return juz;
+	}
+
+	@Override
+ 	public String toString(){
+		return 
+			"AyahsItem{" + 
+			"number = '" + number + '\'' + 
+			",hizbQuarter = '" + hizbQuarter + '\'' + 
+			",ruku = '" + ruku + '\'' + 
+			",manzil = '" + manzil + '\'' + 
+			",text = '" + text + '\'' + 
+			",page = '" + page + '\'' + 
+			",sajda = '" + sajda + '\'' + 
+			",numberInSurah = '" + numberInSurah + '\'' + 
+			",juz = '" + juz + '\'' + 
+			"}";
+		}
 }
